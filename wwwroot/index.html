@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/b20a95ce52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                Jueun
+                <!--<img src="images/logo.png" class="logo" />-->
+                <ul>
+                    <li>
+                        <a href="#header">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Jueun Yeon</span> <br />From Colorado</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_1778 (1).jpg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am an aspiring software developer in the MSSA Cloud Application Development Program. I love to work out and LOVE my two cats!
+                        <br /> <br />My current focus is on delivering an experience through screens and bringing people together through technology. I am interested in product design, web design and development,
+                        interactive media, and game programming. I also love working with others who are passionate about what they do.
+                        <br /> <br />
+                        This portfolio includes works that I've accomplished in school and personal projects. Thanks for visiting!
+                    </p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('aspirations')">Professional Aspirations</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Development</span><br />Software development with C#</li>
+                            <li><span>Web Development</span><br />Web App Development with HTML5 / CSS / JavaScript</li>
+                            <li><span>UI/UX</span><br />Designing and building applications using ASP.NET Framework</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>U.S. Marine Corps</span><br />Dec 2018 - Dec 2022 | Maintenance Management Specialist - specializing in data analytics</li>
+                            <li><span>Microsoft Software and Systems Academy (MSSA)</span><br />July 2022 - Nov 2022</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Clark University</span><br />Physics 2016-2017</li>
+                            <li><span>American Military University</span><br />Mathematics 2021 - Present</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Fitness</span><br />I love listening to Metallica, Guns N' Roses, and Beyonce when I'm lifting!</li>
+                            <li><span>Netflix</span><br />I love documentaries.</li>
+                            <li><span>Hiking</span><br />I love nature.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="aspirations">
+                        <ul>
+                            <li>
+                                <span>Passion for People</span><br />I want to work with people who are not only passionate about their work, but people. Helping
+                                others through my work is my main goal.
+                            </li>
+                            <li><span>Software Developer</span><br />This journey has been very exciting. I cannot wait to learn more and get hands on experience in my next role.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES -->
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-thin fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p> words words words</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-thin fa-window-restore"></i>
+                    <h2>Web Development</h2>
+                    <p> words words words</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-thin fa-wand-magic-sparkles"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> words words words</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Game Screenshot.png" />
+                    <div class="layer">
+                        <h3>Mini Shooting Game</h3>
+                        <p>Reload your ammo and health to kill as much zombies you can before reaching boss level.</p>
+                        <a href="#video"><i class="fa fa-thin fa-link"></i></a>
+                        <video id="video" src="images/Project1_Shooting Game.mp4" width="350" height="300" loop="loop" muted="muted" controls="controls" />
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Calculator Screenshot.png" />
+                    <div class="layer">
+                        <h3>Basic Calculator</h3>
+                        <p>Simple calcultor for basis arithematic operators.</p>
+                        <a href="#"><i class="fa fa-thin fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Phonebook Screenshot.png" />
+                    <div class="layer">
+                        <h3>Personal Phonebook</h3>
+                        <p>Contact List linking to SQL server to store contact data.</p>
+                        <a href="#"><i class="fa fa-thin fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa fa-thin fa-envelope"> </i>  jueun.yeon@outlook.com</p>
+                    <p><i class="fa fa-thin fa-phone"> </i> (303)-563-9489</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jueun-yeon/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jueun0801"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="Geolocation.html"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <br />
+                    <a href="images/PCAD7 Jueun Resume.pdf" download class="btn btn2">View My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
